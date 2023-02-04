@@ -1,0 +1,34 @@
+/* *{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+} */
+
+/* Pseudo Classes */
+/* Using Pesudo classes we actually define the state of any particular tag or wrapper */
+li:first-child{
+color: blue;
+}
+li:nth-child(2n+1){
+    color: red;
+}
+h1:first-child{
+    color: blueviolet;
+}
+p:nth-last-child(2){
+    color: yellow;
+}
+
+/* Pseudo Element */
+
+/* Using Pesudo element we actually define the state of any particular element present inside a tag or wrapper */
+
+p::first-letter{
+    font-size: 100px;
+    color: green;
+}
+/* ::first-line.::first-line, ::before. ::after etc Pseudo element can be used */
+h1::after{
+    content: " Lorem";
+    text-decoration: underline;
+}
